@@ -11,14 +11,18 @@
 }
 
 header{
+    width: 100%;
+    height: 600px;
     background-color: #161616;
     color: white;
     border-radius: 20px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .header-title{
+    width: 50%;
     padding: 80px;
 }
 
@@ -35,23 +39,28 @@ header{
     letter-spacing: 2px;
 }
 
-.header-image img{
-    height: 600px;
+.header-image{
+    width: 50%;
     padding-top: 50px;
-    padding-right:70px;
+    padding-right: 50px;
+}
+
+.header-image img{
+    width: 100%;
+    height: 100%;
     
 }
 
 .contain{
     margin-top: 50px;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 .contain-btn{
-    width: 300px;
+    width: 350px;
     height: 300px;
-    padding: 10px 0;
     background-color: black;
     border-radius: 15px;
     display: grid;
@@ -60,18 +69,16 @@ header{
 
 }
 
+
 .btn-group{
-    padding: 20px 40px;
+    padding: 20px 50px;
     background-color: white;
-    font-weight: bold;
     border-radius: 10px;
     text-align: center;
 
 }
 
 .btn-group a{
-    width: 260px;
-    height: 60px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -85,7 +92,6 @@ header{
 }
 
 .card-1{
-    display: none;
     text-align: center;
     padding: 50px 25px;
     border: 1px solid lightgrey;
@@ -118,6 +124,10 @@ header{
     padding: 20px;
 }
 
+.player-img img{
+    width: 100%;
+}
+
 .card-btn{
     background-color: white;
     padding: 8px 20px;
@@ -143,17 +153,6 @@ header{
 .card-icon span{
     color: rgba(22, 22, 22, 0.7);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     background-color: #161616;
@@ -192,3 +191,62 @@ footer{
     color: white;
     text-align: center;
 }
+
+
+/* For Tablet Size */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        margin: 50px;
+    }
+
+    header{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-title {
+        padding: 50px;
+    }
+
+    .header-image img{
+        width: max-content;
+        height: max-content;
+        
+    }
+
+    .contain {
+        display: inline;
+    }
+
+    .contain-btn{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 0;
+        margin: 60px 0px;
+    }
+
+    .btn-group{
+        width: 180px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid lightslategray;
+        border-radius: 5px;
+    }
+
+    .contain-card-1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contain-card-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+}
+
