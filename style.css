@@ -34,3 +34,42 @@ header{
     width: 100%;
     height: 450px;
 }
+.contain{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.contain-btn{
+    background-color: black;
+    padding: 30px;
+    display: grid;
+    gap: 15px;
+
+}
+.btn-group{
+    width: 230px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+.contain-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.cards{
+    text-align: center;
+    padding: 50px 25px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.flag{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.cards h3{
+    margin: 10px 0px;
+}
