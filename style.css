@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    margin-top: 30px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+header{
+    width: 100%;    
+    height: 600px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;  
+}
+.header-title{
+    padding: 80px;
+}
+.header-btn{
+    background-color: #DD0000;
+    padding: 10px 20px;
+}
