@@ -37,6 +37,14 @@ header{
     margin-top: 20px;
     border: none;
     letter-spacing: 2px;
+    transition: 0.50s all ease;
+}
+
+.header-btn:hover{
+    background-color: #71efe7;
+    color: #DD0000;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .header-image{
@@ -69,12 +77,12 @@ header{
 
 }
 
-
 .btn-group{
     padding: 20px 50px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    transition: 0.50s all ease;
 
 }
 
@@ -82,7 +90,12 @@ header{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    
+   
+}
+
+.btn-group:hover{
+    background-color: #DD0000;
+    cursor: pointer;
 }
 
 .contain-card-1{
